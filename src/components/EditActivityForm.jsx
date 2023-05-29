@@ -65,6 +65,7 @@ const EditActivityForm = (props) => {
                     id="activity"
                     value={newEditData.activityType}
                     onChange={handleEditFormChange}
+                    required
                   >
                     <option disabled hidden>
                       Open this select menu
@@ -102,9 +103,12 @@ const EditActivityForm = (props) => {
                     placeholder="Date"
                     name="date"
                     id="date"
+                    max="2023-06-31"
+                    min="2023-04-31"
                     autoComplete="off"
                     value={newEditData.date}
                     onChange={handleEditFormChange}
+                    required
                   />
                 </Form.Group>
               </div>
@@ -117,8 +121,11 @@ const EditActivityForm = (props) => {
                     name="duration"
                     id="duration"
                     autoComplete="off"
+                    max="24"
+                    min="1"
                     value={newEditData.duration}
                     onChange={handleEditFormChange}
+                    required
                   />
                 </Form.Group>
               </div>
@@ -133,6 +140,7 @@ const EditActivityForm = (props) => {
                     rows={3}
                     name="description"
                     id="description"
+                    maxlength="50"
                     value={newEditData.description}
                     onChange={handleEditFormChange}
                   />

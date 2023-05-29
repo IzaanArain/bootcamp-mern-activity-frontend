@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react';
 import { UseActivityContext } from '../hooks/useActivityContext';
 import EditButton from './EditButton';
 //date fns
@@ -6,7 +6,8 @@ import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 import { UseAuthContext } from '../hooks/useAuthContext';
 
 const ActivityCard = ({data}) => {
-    const {_id,activityType,description,duration,date,createdAt} = data;
+  const defaultImg="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg"
+    const {_id,activityType,description,duration,date,createdAt,image} = data;
     const {dispatch,url}=UseActivityContext()
     const {user}=UseAuthContext()
 
@@ -35,12 +36,13 @@ const ActivityCard = ({data}) => {
   return (
     <>
     <div className="card mb-4 shadow font-monospace" id="myCard">
+    <img src={!image ? defaultImg : image}  className="card-img-top" alt="my image" style={{height:"18rem"}}/>
         <div className="card-body">
           {/* <h4><span className="text-danger fw-bold">id </span>: {_id}</h4>
           <hr /> */}
           <h4><span className="text-danger fw-bold">Name: </span>{user.fname} {user.lname}</h4>
           <hr />
-          <h5 className="card-title"><span className="text-danger fw-bold">Acivity type</span> : {activityType}</h5>
+          <h5 className="card-title"><span className="text-danger fw-bold">Activity type</span> : {activityType}</h5>
           
           {/* <div className="card-text">
             <div className="row">
@@ -88,6 +90,7 @@ const ActivityCard = ({data}) => {
           </ul>
 
           <p className="card-Text fs-6">{formatDistanceToNow(new Date(createdAt),{addSuffix:true})}</p>
+          {/* <p className="card-Text fs-6">{createdAt}</p> */}
           
         </div>
         <div className="d-flex gap-4 justify-content-start mb-4 mx-4">

@@ -131,6 +131,8 @@ const postActivity = async (data) => {
                   autoComplete="off"
                   value={newData.duration}
                   onChange={handleFormChange}
+                  max="24"
+                  min="1"
                   required
                 />
               </Form.Group>
@@ -147,6 +149,8 @@ const postActivity = async (data) => {
                   name="date"
                   id="date"
                   autoComplete="off"
+                  max="2023-06-31"
+                  min="2023-04-31"
                   value={newData.date}
                   onChange={handleFormChange}
                 //   required
@@ -164,6 +168,7 @@ const postActivity = async (data) => {
                   rows={3}
                   name="description"
                   id="description"
+                  maxlength="50"
                   value={newData.description}
                   onChange={handleFormChange}
                 />
