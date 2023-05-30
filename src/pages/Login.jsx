@@ -29,6 +29,8 @@ const Login = () => {
   };
   const defaultImg =
     "https://generationiron.com/wp-content/uploads/2020/12/Do-You-Need-to-Train-to-Muscle-Failure-for-Hypertrophy-1-696x369.jpg";
+    const animateImg="https://i.pinimg.com/originals/c1/25/8d/c1258dc0037abe9cbedb418864c92a47.gif"
+    const animateImg2="https://cdn.dribbble.com/users/1981957/screenshots/3957160/hurdler_800x600.gif"
   return (
     <>
 
@@ -37,7 +39,7 @@ const Login = () => {
       <div className="card bg-dark text-white m-5">
         <div className="row g-0">
           <div className="col-lg-6">
-            <img src={defaultImg} className="card-img-top" alt="my image" />
+            <img src={animateImg} className="card-img-top" alt="my image" />
           </div>
           <div className="col-lg-6">
             <div className="card-body">
@@ -80,7 +82,7 @@ const Login = () => {
                   <div className="btn btn-outline-danger mt-2">{error}</div>
                 )}
               </Form>
-              <h1>Don't have account <span><Link to="/signup">SignUp Now!</Link></span></h1>
+              <h1 className="card-text">Don't have account <span><Link to="/signup">SignUp Now!</Link></span></h1>
             </div>
           </div>
         </div>
