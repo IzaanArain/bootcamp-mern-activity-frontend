@@ -4,6 +4,7 @@ import EditButton from "./EditButton";
 //date fns
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { UseAuthContext } from "../hooks/useAuthContext";
+import DeleteButton from "./DeleteButton";
 
 const ActivityCard = ({ data }) => {
   const defaultImg =
@@ -27,7 +28,7 @@ const ActivityCard = ({ data }) => {
       if (response.ok) {
         const newResData = await response.json();
         dispatch({ type: "DELETE_ACTIVITY", payload: newResData });
-        console.log(newResData);
+        // console.log(newResData);
       } else {
         throw new Error(`Api call failed with ${response.status}`);
       }
@@ -117,13 +118,14 @@ const ActivityCard = ({ data }) => {
         </div>
         <div className="card-footer d-flex gap-4 justify-content-start">
           <EditButton data={data} />
-          <button
+          {/* <button
             className="btn btn-danger"
             style={{ width: "100%" }}
             onClick={() => handleDeleteClick(_id)}
           >
             Delete
-          </button>
+          </button> */}
+          <DeleteButton data={data}/>
         </div>
       </div>
     </>

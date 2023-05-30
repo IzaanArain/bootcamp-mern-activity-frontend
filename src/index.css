@@ -99,6 +99,20 @@ footer:hover{
   background: url("https://cdn.shopify.com/s/files/1/0141/5242/t/16/assets/fitsix-4-bright_LIQo.jpg?v=162012172211")no-repeat center center/ cover;;
   background-color: #333;
 }
+.NotFoundPage{
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NotFoundPage h2{
+  font-size: 300px;
+}
+.NotFoundPage h1{
+  font-size: 200px;
+}
 @media screen and (max-width:1300px) {
   #myCard{
     width: 30%;

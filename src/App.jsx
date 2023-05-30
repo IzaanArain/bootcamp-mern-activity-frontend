@@ -6,6 +6,7 @@ import SignUp from "./pages/SignUp"
 import Login from "./pages/Login"
 import Navbar from "./components/Navbar"
 import MyFooter from "./components/MyFooter"
+import NotFoundPage from "./pages/NotFoundPage"
 function App() {
   const {user}=UseAuthContext()
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route 
           path="/signup"
            element={!user ? <SignUp/> : <Navigate to="/"/>}/>
+           <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
       </div>
       <MyFooter/>
