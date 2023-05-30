@@ -82,7 +82,7 @@ const ActivityCard = ({data}) => {
 
           <ul className="list-group fw-bold">
             <li className="list-group-item list-group-item-action">
-              <p className="card-text fs-6"><span className="text-danger">Duration</span> : {duration}</p>
+              <p className="card-text fs-6"><span className="text-danger">Duration</span> : {duration} hours</p>
             </li>
             <li className="list-group-item list-group-item-action">
               <p className="card-Text fs-6"><span className="text-danger">Date</span> : {date}</p>

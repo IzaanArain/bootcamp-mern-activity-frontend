@@ -148,10 +148,12 @@ const postActivity = async (data) => {
                   <option disabled hidden>
                     Open this select menu
                   </option>
+                  <option value="walking">Walking</option>
                   <option value="Bicycles">Bicycle</option>
                   <option value="Swimming">Swimming</option>
                   <option value="Boxing">Boxing</option>
                   <option value="Running">Running</option>
+                  <option value="Hiking">Hiking</option>
                   <option value="Weight Lifting">Weight Lifting</option>
                 </Form.Select>
               </Form.Group>
@@ -193,7 +195,7 @@ const postActivity = async (data) => {
                   min={currentDate}
                   value={newData.date}
                   onChange={handleFormChange}
-                //   required
+                  required
                 />
               </Form.Group>
             </div>
