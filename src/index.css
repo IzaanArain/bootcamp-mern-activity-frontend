@@ -51,7 +51,7 @@ header a{
 
 .card_scrollable{
   height: 700px;
-  overflow: scroll
+  overflow-y: scroll;
 }
 
 #loginPage{
@@ -67,9 +67,11 @@ header a{
 
 @media screen and (max-width:1000px) {
   #myCard{
-    width: auto;
+    width: 380px;
   }
   #activity-list{
     flex-direction: column;
+  }
+  .card_scrollable{
   }
 }
