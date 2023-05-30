@@ -42,7 +42,7 @@ const Home = () => {
   //   console.log(activities)
   return (
     <>
-      <div className="bg-dark">
+      <div className="bg-dark" style={{height:"85vh"}}>
         <div className="container-fluid">
             <div className="row">
                 <div className="col-lg-3">

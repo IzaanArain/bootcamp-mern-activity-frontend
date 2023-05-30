@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import SignUp from "./pages/SignUp"
 import Login from "./pages/Login"
 import Navbar from "./components/Navbar"
+import MyFooter from "./components/MyFooter"
 function App() {
   const {user}=UseAuthContext()
   return (
@@ -26,6 +27,7 @@ function App() {
            element={!user ? <SignUp/> : <Navigate to="/"/>}/>
         </Routes>
       </div>
+      <MyFooter/>
       </BrowserRouter>
      </div>
     </>

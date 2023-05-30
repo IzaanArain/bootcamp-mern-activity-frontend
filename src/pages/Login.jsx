@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useLogin } from "../hooks/useLogin";
-
+import {Link } from "react-router-dom"
 const Login = () => {
   const [loginUser, setloginUser] = useState({
     email: "",
@@ -42,7 +42,7 @@ const Login = () => {
           <div className="col-lg-6">
             <div className="card-body">
             <h1 className="card-title">Login Now!</h1>
-              <Form onSubmit={handleLoginSubmit}>
+              <Form onSubmit={handleLoginSubmit} className="card-text">
                 <Form.Group className="my-3">
                   <Form.Label htmlFor="email"><h3>Email address :</h3></Form.Label>
                   <Form.Control
@@ -80,6 +80,7 @@ const Login = () => {
                   <div className="btn btn-outline-danger mt-2">{error}</div>
                 )}
               </Form>
+              <h1>Don't have account <span><Link to="/signup">SignUp Now!</Link></span></h1>
             </div>
           </div>
         </div>
