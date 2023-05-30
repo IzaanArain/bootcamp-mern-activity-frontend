@@ -31,6 +31,8 @@ const Login = () => {
     "https://generationiron.com/wp-content/uploads/2020/12/Do-You-Need-to-Train-to-Muscle-Failure-for-Hypertrophy-1-696x369.jpg";
   return (
     <>
+
+      <div id="loginPage">
       <div className="container-fluid">
       <div className="card m-5">
         <div className="row g-0">
@@ -82,6 +84,7 @@ const Login = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
       </div>
     </>
