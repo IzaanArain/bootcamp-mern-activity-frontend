@@ -33,16 +33,17 @@ const SignUp = () => {
     <>
       <div id="signup">
         <div className="container" style={{ width: "50%" }}>
+          <div className="card bg-dark text-white">
           <h1
-            className="text-center text-white mt-4"
+            className="card-header text-center text-white"
             style={{
               fontWeight: "bolder",
               fontSize:"3rem"
             }}
           >
-            SignUp Now
+            SignUp Now!
           </h1>
-          <div className="card p-4 bg-dark text-white">
+            <div className="card-body">
             <Form onSubmit={handleSignUpSubmit}>
               <Form.Group className="mb-3">
                 <Form.Label htmlFor="fname">
@@ -115,6 +116,7 @@ const SignUp = () => {
                 <div className="btn btn-outline-danger mt-2">{error}</div>
               )}
             </Form>
+            </div>
           </div>
         </div>
       </div>

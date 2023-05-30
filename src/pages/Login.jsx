@@ -41,11 +41,10 @@ const Login = () => {
           </div>
           <div className="col-lg-6">
             <div className="card-body">
-            <h1 className="card-title">Please login</h1>
-            <hr />
+            <h1 className="card-title">Login Now!</h1>
               <Form onSubmit={handleLoginSubmit}>
-                <Form.Group className="mb-3">
-                  <Form.Label htmlFor="email"><h3>Email address</h3></Form.Label>
+                <Form.Group className="my-3">
+                  <Form.Label htmlFor="email"><h3>Email address :</h3></Form.Label>
                   <Form.Control
                     type="email"
                     id="email"
@@ -58,7 +57,7 @@ const Login = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                  <Form.Label htmlFor="password"><h3>Enter Password</h3></Form.Label>
+                  <Form.Label htmlFor="password"><h3>Enter Password :</h3></Form.Label>
                   <Form.Control
                     type="password"
                     name="password"
