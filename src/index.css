@@ -67,7 +67,7 @@ header a{
 
 @media screen and (max-width:950px) {
   #myCard{
-    width: 430px;
+    width: 400px;
   }
   #activity-list{
     flex-direction: row;
