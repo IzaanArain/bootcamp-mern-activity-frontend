@@ -27,8 +27,7 @@ const Login = () => {
     await login(email, password);
     // console.log(loginUser)
   };
-  const defaultImg =
-    "https://generationiron.com/wp-content/uploads/2020/12/Do-You-Need-to-Train-to-Muscle-Failure-for-Hypertrophy-1-696x369.jpg";
+  const defaultImg ="https://generationiron.com/wp-content/uploads/2020/12/Do-You-Need-to-Train-to-Muscle-Failure-for-Hypertrophy-1-696x369.jpg";
     const animateImg="https://i.pinimg.com/originals/c1/25/8d/c1258dc0037abe9cbedb418864c92a47.gif"
     const animateImg2="https://cdn.dribbble.com/users/1981957/screenshots/3957160/hurdler_800x600.gif"
     const animateImg3="https://media0.giphy.com/media/mLppN5GvJq5YOCB8tq/giphy.gif?cid=6c09b95259b43d9e4847a1c5d948c34d35b9491d27a34c82&ep=v1_internal_gifs_gifId&rid=giphy.gif&ct=s"
@@ -40,7 +39,7 @@ const Login = () => {
       <div className="card bg-dark text-white m-5">
         <div className="row g-0">
           <div className="col-lg-6">
-            <img src={defaultImg} className="card-img-top" alt="my image" />
+            <img src={animateImg} className="card-img-top" alt="my image" />
           </div>
           <div className="col-lg-6">
             <div className="card-body">
