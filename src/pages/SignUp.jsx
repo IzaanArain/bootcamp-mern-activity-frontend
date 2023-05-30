@@ -107,7 +107,7 @@ const SignUp = () => {
               <Button
                 variant="primary"
                 type="submit"
-                style={{ width: "100%" }}
+                style={{ width: "100%",fontWeight:"bolder",fontSize:"2rem" }}
                 disabled={isLoading}
               >
                 Submit
