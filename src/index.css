@@ -10,10 +10,10 @@ body{
   font-family:monospace;
 }
 
-header{
-  /* background-color: #fff; */
-  /* background-color:#494F55; */
-}
+/* header{
+  background-color: #fff;
+  background-color:#494F55;
+} */
 
 header .navbar-container{
   max-width: 1440px;

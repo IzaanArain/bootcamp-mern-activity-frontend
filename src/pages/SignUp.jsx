@@ -34,15 +34,13 @@ const SignUp = () => {
       <div id="signup">
         <div className="container" style={{ width: "50%" }}>
           <h1
-            className="text-center mt-4"
+            className="text-center text-white mt-4"
             style={{
-              color: "#ff002f",
               fontWeight: "bolder",
-              textDecoration: "underline",
               fontSize:"3rem"
             }}
           >
-            Registration
+            SignUp Now
           </h1>
           <div className="card p-4 bg-dark text-white">
             <Form onSubmit={handleSignUpSubmit}>
