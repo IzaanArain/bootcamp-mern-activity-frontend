@@ -65,9 +65,17 @@ header a{
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:950px) {
   #myCard{
-    width: 380px;
+    width: 430px;
+  }
+  #activity-list{
+    flex-direction: row;
+  }
+}
+@media screen and (max-width:600px) {
+  #myCard{
+    width: 350px;
   }
   #activity-list{
     flex-direction: column;
