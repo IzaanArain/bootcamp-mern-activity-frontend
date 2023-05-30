@@ -162,6 +162,7 @@ const EditActivityForm = (props) => {
                     autoComplete="off"
                     max="24"
                     min="1"
+                    step="0.01"
                     value={newEditData.duration}
                     onChange={handleEditFormChange}
                     required

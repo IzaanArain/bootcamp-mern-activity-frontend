@@ -172,6 +172,7 @@ const postActivity = async (data) => {
                   onChange={handleFormChange}
                   max="24"
                   min="1"
+                  step="0.01"
                   required
                 />
               </Form.Group>

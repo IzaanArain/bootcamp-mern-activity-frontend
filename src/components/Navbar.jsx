@@ -14,9 +14,9 @@ const Navbar = () => {
     <header>
         <div className='navbar-container'>
             <Link to='/'>
-            {/* <h1>TrackerFit</h1> */}
-            <div>
-              <img src="" alt="" />
+            <div className="Logo">
+              {/* <img src="" alt="" /> */}
+              <h1>TrackerFit</h1>
             </div>
             </Link>
             <nav>
