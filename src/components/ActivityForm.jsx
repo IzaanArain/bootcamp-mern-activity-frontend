@@ -128,14 +128,12 @@ const postActivity = async (data) => {
     <>
     <div className="card mb-4" id="form_card">
       <div className="card-body">
-        <h2 className="card-title">Form</h2>
-
         <Form onSubmit={clickFormHandler}>
 
         <div className="row">
             <div className="col-lg">
               <Form.Group className="mb-1 fs-5">
-                <Form.Label htmlFor="activity">Activity Type :</Form.Label>
+                <Form.Label htmlFor="activity"><h5>Activity Type :</h5></Form.Label>
 
                 <Form.Select
                   aria-label="Default select example"
@@ -163,7 +161,7 @@ const postActivity = async (data) => {
           <div className="row">
             <div className="col-lg">
               <Form.Group className="mb-1 fs-5">
-                <Form.Label htmlFor="duration">duration :</Form.Label>
+                <Form.Label htmlFor="duration"><h5>duration :</h5></Form.Label>
                 <Form.Control
                   type="number"
                   placeholder="Enter Duration"
@@ -184,7 +182,7 @@ const postActivity = async (data) => {
           <div className="row">
           <div className="col-lg">
               <Form.Group className="mb-1 fs-5">
-                <Form.Label htmlFor="date">Date :</Form.Label>
+                <Form.Label htmlFor="date"><h5>Date :</h5></Form.Label>
                 <Form.Control
                   type="date"
                   placeholder="Date"
@@ -204,7 +202,7 @@ const postActivity = async (data) => {
           <div className="row">
             <div className="col-lg">
               <Form.Group className="mb-1 fs-5">
-                <Form.Label htmlFor="description">Description :</Form.Label>
+                <Form.Label htmlFor="description"><h5>Description :</h5></Form.Label>
                 <Form.Control
                   as="textarea"
                   rows={3}
@@ -221,7 +219,7 @@ const postActivity = async (data) => {
           <div className="row">
             <div className="col-lg">
               <Form.Group className="mb-1 fs-5">
-                <Form.Label htmlFor="image">Image :</Form.Label>
+                <Form.Label htmlFor="image"><h5>Image :</h5></Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="enter image link"

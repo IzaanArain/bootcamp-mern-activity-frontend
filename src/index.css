@@ -12,7 +12,7 @@ body{
 
 header{
   /* background-color: #fff; */
-  background-color:#494F55;
+  /* background-color:#494F55; */
 }
 
 header .navbar-container{
@@ -32,6 +32,10 @@ header a{
   margin-left: 10px;
   font-weight: bold;
   font-size: large;
+}
+
+header a:hover{
+  color: #e7195a;
 }
 
 .pages{
@@ -65,6 +69,16 @@ header a{
   background: url("https://cdn.shopify.com/s/files/1/0141/5242/t/16/assets/fitsix-4-bright_LIQo.jpg?v=162012172211")no-repeat center center/ cover;;
   background-color: #333;
 
+}
+
+#signup{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://cdn.shopify.com/s/files/1/0141/5242/t/16/assets/fitsix-4-bright_LIQo.jpg?v=162012172211")no-repeat center center/ cover;;
+  background-color: #333;
 }
 @media screen and (max-width:1300px) {
   #myCard{

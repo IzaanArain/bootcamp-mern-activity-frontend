@@ -34,7 +34,7 @@ const Login = () => {
 
       <div id="loginPage">
       <div className="container-fluid">
-      <div className="card m-5">
+      <div className="card bg-dark text-white m-5">
         <div className="row g-0">
           <div className="col-lg-6">
             <img src={defaultImg} className="card-img-top" alt="my image" />

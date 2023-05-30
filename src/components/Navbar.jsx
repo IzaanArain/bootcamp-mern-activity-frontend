@@ -11,7 +11,7 @@ const Navbar = () => {
   }
   return (
     <>
-    <header>
+    <header className="bg-dark">
         <div className='navbar-container'>
             <Link to='/'>
             <div className="Logo">
@@ -22,7 +22,7 @@ const Navbar = () => {
             <nav>
             {user && (
                 <div style={{display:"flex",alignItems:"center"}}>
-                <h5>{user.email}</h5>
+                <h5 className="text-white">{user.email}</h5>
                 <button 
                 onClick={handelLogoutClick}
                 className="btn btn-danger"

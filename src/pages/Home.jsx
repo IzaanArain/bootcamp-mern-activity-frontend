@@ -42,9 +42,9 @@ const Home = () => {
   //   console.log(activities)
   return (
     <>
-      <div className="home">
+      <div className="bg-dark">
         <div className="container-fluid">
-            <div className="row mt-2">
+            <div className="row">
                 <div className="col-lg-3">
                     <ActivityForm url={url}/>
                 </div>
