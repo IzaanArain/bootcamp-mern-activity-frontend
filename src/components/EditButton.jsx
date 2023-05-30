@@ -57,7 +57,6 @@ const EditButton = ({data}) => {
             setModalShow(true);
             handeleEditclick(e)
           }}
-          className="mb-1"
         >
           Edit
         </Button>

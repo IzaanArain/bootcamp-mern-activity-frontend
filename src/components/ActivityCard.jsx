@@ -93,7 +93,7 @@ const ActivityCard = ({data}) => {
           {/* <p className="card-Text fs-6">{createdAt}</p> */}
           
         </div>
-        <div className="d-flex gap-4 justify-content-start mb-4 mx-4">
+        <div className="d-flex gap-4 justify-content-start mb-2 mx-4">
          <EditButton data={data}/>
           <button
             className="btn btn-danger"
