@@ -221,7 +221,7 @@ const postActivity = async (data) => {
               <Form.Group className="mb-1 fs-5">
                 <Form.Label htmlFor="image"><h5>Image :</h5></Form.Label>
                 <Form.Control
-                  type="text"
+                  type="url"
                   placeholder="enter image link"
                   name="image"
                   id="image"
