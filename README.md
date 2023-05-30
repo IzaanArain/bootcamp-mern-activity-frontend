@@ -29,7 +29,7 @@ TrackerFit was built using the MERN stack, which includes MongoDB, Express.js, R
 
 ## Authors
 
-- [Izaan saqib](https://github.com/IzaanArain)
+- [Muhahmmad Izaan saqib](https://github.com/IzaanArain)
 
 
 ## 🔗 Links
