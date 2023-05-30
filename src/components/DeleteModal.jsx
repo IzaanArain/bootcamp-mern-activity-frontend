@@ -46,7 +46,7 @@ function DeleteModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h1>You are going remove activity</h1>
+        <h1>You are going to remove a activity</h1>
         {/* <button
             className="btn btn-danger"
             // style={{ width: "100%" }}
