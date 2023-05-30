@@ -47,6 +47,9 @@ header a:hover{
 #myCard{
   width: 32%;
 }
+/* #myCard:hover{
+  background-color:turquoise;
+} */
 #activity-list{
   display: flex;
   column-gap: 20px;
