@@ -27,6 +27,15 @@ TrackerFit was built using the MERN stack, which includes MongoDB, Express.js, R
 ![Dashboard_2_page](https://github.com/IzaanArain/bootcamp-mern-activity-frontend/assets/102476680/58d54b85-1df4-4428-b0e3-359472be8792)
 ![Dashboard_1_page](https://github.com/IzaanArain/bootcamp-mern-activity-frontend/assets/102476680/b41775c4-6f5a-404b-87b9-cbf0aec6302a)
 
+## Delete Confirmation
+![Delete_warning](https://github.com/IzaanArain/bootcamp-mern-activity-frontend/assets/102476680/ceff4fda-390a-4bb8-8433-297e468ed025)
+
+## Edit Modal
+![edit_modal](https://github.com/IzaanArain/bootcamp-mern-activity-frontend/assets/102476680/fec36851-3d5b-47ea-90b2-0ec0fe447506)
+
+## Not Found Page
+![not found page](https://github.com/IzaanArain/bootcamp-mern-activity-frontend/assets/102476680/1e23cbec-e548-4ebe-b767-faac29daedb7)
+
 ## Authors
 
 - [Muhahmmad Izaan saqib](https://github.com/IzaanArain)
