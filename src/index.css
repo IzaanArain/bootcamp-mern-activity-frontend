@@ -12,7 +12,7 @@ body{
 
 header{
   /* background-color: #fff; */
-  background-color: #f1f1f1;
+  background-color:#494F55;
 }
 
 header .navbar-container{
@@ -26,7 +26,8 @@ header .navbar-container{
 }
 
 header a{
-  color: #333;
+  /* color: #333; */
+  color: white;
   text-decoration: none;
   margin-left: 10px;
   font-weight: bold;
@@ -61,7 +62,7 @@ header a{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("https://m.media-amazon.com/images/I/81-r3lE3o-L._AC_UF894,1000_QL80_.jpg")no-repeat center center/ cover;;
+  background: url("https://cdn.shopify.com/s/files/1/0141/5242/t/16/assets/fitsix-4-bright_LIQo.jpg?v=162012172211")no-repeat center center/ cover;;
   background-color: #333;
 
 }
