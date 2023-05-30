@@ -107,12 +107,12 @@ footer:hover{
   align-items: center;
 }
 
-.NotFoundPage h2{
-  font-size: 300px;
+/* .NotFoundPage h2{
+  
 }
 .NotFoundPage h1{
-  font-size: 200px;
-}
+  
+} */
 @media screen and (max-width:1300px) {
   #myCard{
     width: 30%;
