@@ -4,6 +4,7 @@ import ActivityCard from "../components/ActivityCard";
 const ActivityList = ({activities}) => {
   return (
     <>
+    <div className="card_scrollable">
     <div id="activity-list">
     {activities && activities.map((value)=>{
             return(
@@ -12,6 +13,7 @@ const ActivityList = ({activities}) => {
                 </Fragment>
             )
         })}
+    </div>
     </div>
     </>
   )

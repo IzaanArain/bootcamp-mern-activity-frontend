@@ -44,7 +44,7 @@ const Home = () => {
     <>
       <div className="home">
         <div className="container-fluid">
-            <div className="row mt-4">
+            <div className="row mt-2">
                 <div className="col-lg-3">
                     <ActivityForm url={url}/>
                 </div>

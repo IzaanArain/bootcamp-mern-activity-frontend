@@ -47,7 +47,11 @@ header a{
   flex-wrap: wrap;
   /* background-color: #1aac83; */
   justify-content: flex-start;
-  overflow: scroll;
+}
+
+.card_scrollable{
+  height: 700px;
+  overflow: scroll
 }
 
 #loginPage{
