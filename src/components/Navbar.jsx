@@ -14,7 +14,10 @@ const Navbar = () => {
     <header>
         <div className='navbar-container'>
             <Link to='/'>
-            <h1>TrackerFit</h1>
+            {/* <h1>TrackerFit</h1> */}
+            <div>
+              <img src="" alt="" />
+            </div>
             </Link>
             <nav>
             {user && (

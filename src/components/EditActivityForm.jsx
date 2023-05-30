@@ -4,13 +4,52 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import { UseActivityContext } from "../hooks/useActivityContext";
 import { UseAuthContext } from "../hooks/useAuthContext";
-
+import { useState } from "react";
 const EditActivityForm = (props) => {
   const { data, newEditData, handleEditFormChange } = props;
   const { dispatch, url } = UseActivityContext();
   const {user}=UseAuthContext()
   // console.log(newEditData)
   // console.log(data._id)
+
+//min Date
+  const getFormattedDate=()=>{
+    const today = new Date();
+    const year = today.getFullYear();
+    let month = today.getMonth() + 1;
+    let day = today.getDate();
+
+    if (month < 10) {
+      month = '0' + month;
+    }
+    if (day < 10) {
+      day = '0' + day;
+    }
+
+    return `${year}-${month}-${day}`;
+  }
+
+  //max date
+  function getFormattedMaxDate() {
+    const maxDate = new Date();
+    maxDate.setMonth(maxDate.getMonth() + 6);
+    const year = maxDate.getFullYear();
+    let month = maxDate.getMonth() + 1;
+    let day = maxDate.getDate();
+
+    if (month < 10) {
+      month = '0' + month;
+    }
+    if (day < 10) {
+      day = '0' + day;
+    }
+
+    return `${year}-${month}-${day}`;
+  }
+
+  const [currentDate, setCurrentDate] = useState(getFormattedDate());
+  const [maxDate, setMaxDate] = useState(getFormattedMaxDate());
+
   const handleEditFormSubmit = async () => {
     if(!user){
       return
@@ -103,8 +142,8 @@ const EditActivityForm = (props) => {
                     placeholder="Date"
                     name="date"
                     id="date"
-                    max="2023-06-31"
-                    min="2023-04-31"
+                    max={maxDate}
+                    min={currentDate}
                     autoComplete="off"
                     value={newEditData.date}
                     onChange={handleEditFormChange}
@@ -140,7 +179,7 @@ const EditActivityForm = (props) => {
                     rows={3}
                     name="description"
                     id="description"
-                    maxlength="50"
+                    maxlength="100"
                     value={newEditData.description}
                     onChange={handleEditFormChange}
                   />
