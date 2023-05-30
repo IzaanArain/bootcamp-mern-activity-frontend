@@ -39,7 +39,7 @@ const Login = () => {
       <div className="card bg-dark text-white m-5">
         <div className="row g-0">
           <div className="col-lg-6">
-            <img src={animateImg} className="card-img-top" alt="my image" />
+            <img src={animateImg2} className="card-img-top" alt="my image" style={{height:"30rem"}}/>
           </div>
           <div className="col-lg-6">
             <div className="card-body">
